@@ -1,0 +1,34 @@
+.grid-container {
+	display: grid;
+	margin: 40px 0 40px 0;
+	grid-template-columns: repeat(4,25%);
+	grid-template-rows: repeat(3,200px);
+	gap: 1px 1px;
+	text-align: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	grid-template-areas:
+	"parteUno parteUno parteUno"
+	"sectionDos  sectionTres sectionCuatro";
+}
+
+.parteUno {
+	grid-area: bannerUno;
+	background-color: antiquewhite;
+}
+
+.sectionDos {
+	grid-area: noticiaDos;
+	background-color: darkgreen;
+}
+
+.sectionTres {
+	grid-area: noticiaTres;
+	background-color:antiquewhite;
+}
+
+.sectionCuatro {
+	grid-area: noticiaCuatro;
+	background-color: darkgreen;
+}
+
